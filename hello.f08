@@ -1,5 +1,7 @@
 program hello
   implicit none
-  print *, "Hello World!"
+  character(len=50) :: name
+  print *, "Enter your name"
+  read *, name
+  print *, "Hello ", name, "!"
 end program hello
-
